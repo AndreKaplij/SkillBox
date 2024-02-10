@@ -1,0 +1,137 @@
+@font-face {
+    font-family:"Muller";
+    src: local("Muller-Regular"),
+        url("../fonts/MullerRegular.woff2") format(woff2),
+        url("../fonts/MullerRegular.woff") format(woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:"Muller";
+    src: local("Muller-Light"),
+        url("../fonts/MullerLight.woff2") format(woff2),
+        url("../fonts/MullerLight.woff") format(woff);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:"Muller";
+    src: local("Muller-Medium"),
+        url("../fonts/MullerMedium.woff2") format(woff2),
+        url("../fonts/MullerMedium.woff") format(woff);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:"Muller";
+    src: local("Muller-Bold"),
+        url("../fonts/MullerBold.woff2") format(woff2),
+        url("../fonts/MullerBold.woff") format(woff);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1200px;
+    background-color: #E5E5E5;
+    font-family: 'Muller', 'sans-serif';
+    font-style: normal;
+}
+
+:root {
+    --basic-color: #CC9933;
+    --activ-color: #A47312;
+    --hover-color: #F0BF5F;
+    --text-color: #000;
+    --bg-color: #fff;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+.container {
+    width:1200px;
+    padding: 40px 15px;
+    margin: 0 auto;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.textInput {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: #afa796;
+    font-size: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 15%;
+    height: 180px;
+    background-color: rgb(120, 100, 146);
+    border-radius: 10px;
+    color: transparent;
+    font-size: 42px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.card.open {
+    background-color: rgb(130, 46, 46);
+    color:#fff;
+}
+
+.card.success {
+    background-color: #5da922;
+    color:#fff;
+    transform: scale(0.9);
+}
+
+
+
+
+
+
